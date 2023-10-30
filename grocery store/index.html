@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gauravi's Grocery Store</title>
-
-	<!-- Code for font awesome cdn -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Code for font awesome cdn -->
-	<!-- Code for linking -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- Code for linking -->
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -19,38 +13,63 @@
 <header class="header">
 	<a href="#" class="logo"> <i class="fa fa-shopping-basket"></i> Grocery</a>
 
-<nav class="navbar">
-	<a href="#Home">Home</a>
-	<a href="#Features">Features</a>
-	<a href="#Products">Products</a>
-	<a href="#Categories">Categories</a>
-	<a href="#Reviews">Reviews</a>
-	<a href="#Blogs">Blogs</a>
+	<nav class="navbar">
+		<a href="#Home">Home</a>
+		<a href="#Features">Features</a>
+		<a href="#Products">Products</a>
+		<a href="#Categories">Categories</a>
+		<a href="#Reviews">Reviews</a>
+		<a href="#Blogs">Blogs</a>
+	</nav>
 
-</nav>
+	<div class="icons">
+		<div class="fa fa-bars" id="menu-btn"></div>
+		<div class="fa fa-search" id="search-btn"></div>
+		<div class="fa fa-shopping-cart" id="cart-btn"></div>
+		<div class="fa fa-user" id="login-btn"></div> <!-- Added closing tag for div -->
+	</div>	
 
-<div class="icons">
-	<div class="fa fa-bars" id="menu-btn"></div>
-	<div class="fa fa-search" id="search-btn"></div>
-	<div class="fa fa-shopping-cart" id="cart-btn"></div>
-	<div class="fa fa-user" id="login-btn">
-			
-</div>	
+	<form class="search-form">
+		<input type="search" id="search-box" placeholder="Search-here">
+		<label for="search-box" class="fa fa-search"></label>
+	</form>
 
-<form class="search-form">
-	<input type="search" id="search-box" placeholder="Search-here
-	.....">
-</form>
+	<div class="shopping-cart">
+		<div class="box">
+			<i class="fa fa-trash"></i> <!-- Added closing tag for i -->
+			<img src="image/cart-img-1.png" alt="Watermelon">
+			<div class="content">
+				<h3>watermelon</h3>
+				<span class="price">₹150/-</span>
+				<span class="quantity">Qty : 1</span>
+			</div>
+		</div>
 
+		<div class="box">
+			<i class="fa fa-trash"></i> <!-- Added closing tag for i -->
+			<img src="image/cart-img-2.png" alt="Onion">
+			<div class="content">
+				<h3>onion</h3>
+				<span class="price">₹80/-</span>
+				<span class="quantity">Qty : 1</span>
+			</div>
+		</div>
 
+		<div class="box">
+			<i class="fa fa-trash"></i> <!-- Added closing tag for i -->
+			<img src="image/cart-img-3.png" alt="Chicken">
+			<div class="content">
+				<h3>chicken</h3>
+				<span class="price">₹260/-</span>
+				<span class="quantity">Qty : 1</span>
+			</div>
+		</div>
 
-
+		<div class="total"> total : ₹490/- </div>
+		<a href="#" class="btn">Checkout</a>
+	</div>
 </header>
 <!-- Header Section -->
-
-
-
-
 
 <script src="js/script.js"></script>
 
